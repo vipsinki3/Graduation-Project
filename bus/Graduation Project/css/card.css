@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui;
+}
+
+::selection {
+    color: white;
+    background-color: rgb(15, 14, 14);
+}
+
+@font-face {
+    font-family: "Droid-Arabic-Kufi";
+    src: url(/fonts/Droid-Arabic-Kufi.ttf);
+}
+
+
+
+/* بداية كود الهيدر */
+
+.header {
+    height: 80px;
+    background-color: rgb(14, 13, 13);
+    border-bottom: 2px solid #e90808;
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.header .container .name-header {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: system-ui;
+    color: #0896ee;
+}
+
+.header .container .link-header {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.header .container .link-header a {
+    min-width: 100px;
+    padding: 6px 10px;
+    color: rgb(231, 13, 13);
+    font-size: 18px;
+    font-weight: 600;
+    font-family: system-ui;
+    transition: 0.3s;
+
+
+    background: linear-gradient(to right, #139aa7 50%, rgb(252, 249, 249) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.header .container .link-header a:hover {
+    background-position: left bottom;
+    color: rgb(238, 231, 231);
+    box-shadow: #1977d5 0px 1px 0px 0px, #0095ff 0px 0px 5px 0px;
+}
+
+.header .right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .burger-icon img {
+    cursor: pointer;
+    display: none;
+}
+
+.header .burger-icon img:hover .manu {
+    background-color: rgb(247, 244, 244);
+}
+
+@media (max-width:767px) {
+    .header .container {
+        justify-content: center;
+    }
+
+    .header .right-nav {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header .right-nav .link-header {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header .container .link-header a {
+        width: 100%;
+    }
+
+    .header .container .link-header a:hover {
+        background-color: rgb(246, 241, 241);
+        box-shadow: none;
+        color: rgb(244, 241, 241);
+        background-position: left bottom;
+    }
+}
+
+/* نهاية كود الهيدر */
+
+
+/* بداية كود الكونتينر */
+
+.containerPage {
+    position: relative;
+    /* top: 200px; */
+    width: 1300px;
+    height: 1000px;
+    background-color: #f6f6f6;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 1300px) {
+    .containerPage {
+        width: auto;
+    }
+}
+
+/* بداية كود الكونتكت */
+
+.content .boxDataDate {
+    margin-bottom: 50px;
+}
+
+/* نهاية كود الكونتكت */
+
+
+/* بداية كود اسماعيل */
+
+.containerPage .boxDataDate {
+    direction: rtl;
+    height: 300px;
+    width: 660px;
+    background-color: #0bebe4;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    border-radius: 7px;
+}
+
+
+/* نهاية كود اسماعيل */
+
+/* بداية كود كتابة البيانات */
+
+.containerPage .boxData {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 300px;
+    background-color: #FFFFFF;
+    box-shadow: rgb(42 42 42 / 55%) 0px 10px 50px;
+    background-image: linear-gradient(to right, #fcfcfc, #cbccce);
+    transition: width 0.3s;
+    border-radius: 7px;
+
+}
+
+.containerPage .boxData:hover {
+    transition: 0.7s;
+    width: 500px;
+    transform: translateX(100px);
+    border-radius: 0px;
+}
+
+.containerPage .boxData form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.containerPage .boxData input:first-child {
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    width: 220px;
+    direction: rtl;
+}
+
+.containerPage .boxData input:nth-child(2) {
+    padding: 15px;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    direction: rtl;
+}
+
+.containerPage .boxData input:nth-child(3) {
+    padding: 15px 15px;
+    font-weight: bold;
+    color: white;
+    border-radius: 3px;
+    background-color: #495057;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.containerPage .boxData input:nth-child(3):hover {
+    background-color: #6c757d;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border: solid 1px rgb(14, 14, 14);
+}
+
+.containerPage .boxData input::placeholder {
+    color: #6c757d;
+    font-weight: bold;
+}
+
+/* .containerPage .boxData input:after {
+    content: "";
+    position: relative;
+    left: 20px;
+    width: 10px;
+    height: 100%;
+    background-color: #ff0000;
+    border: solid 5px red;
+} */
+
+.containerPage .boxData h1 {
+    position: absolute;
+    bottom: 2px;
+    text-align: center;
+    color: red;
+}
+
+/* نهاية كود كتابة البيانات */
+
+/* بداية كود بوكس التذكرة */
+
+.containerPage .boxCard {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 300px;
+    background-image: linear-gradient(to right, #8d0606, #0075ff);
+    border-radius: 7px;
+    box-shadow: rgb(53 0 122 / 67%) 0px 10px 50px;
+}
+
+.containerPage .boxCard .nameCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.containerPage .boxCard .nameCard h1 {
+    direction: rtl;
+    color: white;
+}
+
+.containerPage .boxCard .numberPhone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.containerPage .boxCard .numberPhone h1 {
+    direction: rtl;
+    color: white;
+}
+
+.containerPage .boxCard .nubmerCode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.containerPage .boxCard .nubmerCode h1 {
+    direction: rtl;
+    color: rgb(247, 242, 242);
+}
+
+.containerPage .boxCard .station {
+    display: flex;
+    direction: rtl;
+    gap: 20px;
+    color: rgb(244, 236, 236);
+}
+
+.containerPage .boxCard .fromStation {
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+
+.containerPage .boxCard .toStation {
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+
+.containerPage .boxCard .dateAndTime {
+    display: flex;
+    direction: rtl;
+    gap: 20px;
+}
+
+.containerPage .boxCard .divTimeIn, .divtimeOut, .divdate {
+    display: flex;
+    direction: rtl;
+    gap: 15px;
+}
+
+.containerPage .boxCard .footerCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.containerPage .boxCard .footerCard h1 {
+    direction: rtl;
+    color: white;
+    font-size: 16px;
+    color: #f7bf09;
+}
+
+.containerPage .boxCard #codeColor {
+    color: rgb(232, 224, 223);
+}
+
+.containerPage .boxCard h1 {
+    font-size: 20px;
+}
+
+/* نهاية كود بوكس التذكرة */
+
+/* نهاية كود الكونتينر */

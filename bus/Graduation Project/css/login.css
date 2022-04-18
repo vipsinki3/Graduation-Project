@@ -1,0 +1,153 @@
+/* بداية كود اسماعيل  */
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F8FA;
+}
+
+
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    width: 500px;
+    height: 400px;
+    background-color: #ffffff;
+}
+
+.form form {}
+
+.form form h2 {
+    font-size: 25px;
+    font-family: system-ui;
+}
+
+.form form input {
+    margin: 10px 0px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid #F4B12C;
+}
+.form form #inpSginIn {
+    background-color: #F4B12C;
+    border: 1px solid #000;    
+    font-weight: bold;
+    cursor: pointer;
+}
+.createAccount form #sss option {
+    font-size: 20px;
+}
+.form form li {
+    list-style: none;
+}
+.form form a {
+    text-decoration: none;
+    color: #757575;
+}
+
+/* بداية كود الميديا كويري */
+
+
+/* Mobile */
+/* @media (max-width: 399px) {
+    .form {
+        margin-top: 300px;
+    }
+    .form form input {
+        margin: 10px 0px;
+        padding: 15px 5px;
+    }    
+} */
+/* md */
+/* @media  (min-width: 400px) and (max-width: 767px) {
+    .form {
+        margin-top: 300px;
+    }
+    .form form input {
+        margin: 10px 0px;
+        padding: 15px 30px;
+    }
+} */
+
+/* lg */
+/* @media  (min-width: 768px) and (max-width: 992px) {
+    .form{
+        margin-top: 300px;
+    }
+} */
+
+/* Xlg */
+/* @media (max-width: 1399px) {
+    .form{
+        margin-top: 300px;
+    }
+} */
+
+/* نهاية كود الميديا كويري */
+
+
+/* بداية كود انشاء حساب جديد */
+
+.createAccount {    
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    width: 500px;
+    height: 600px;
+    background-color: #ffffff;
+}
+.createAccount h1 {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: system-ui;
+    color: #757575;
+}
+.createAccount form {
+    
+}
+.createAccount form input {
+    margin: 10px 0px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid #F4B12C;
+    width: 300px;
+}
+
+.createAccount form #submit {
+    width: 365px;
+    background-color: #F4B12C;
+    border: 1px solid #000;
+    font-family: system-ui;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.createAccount form h3 {
+    color: #757575;
+    font-family: system-ui;
+    font-weight: 100;
+    margin: 0;
+}
+.createAccount form li {
+    list-style: none;
+}
+.createAccount form li a {
+    text-decoration: none;
+    color: #757575;
+}
+
+/* نهاية كود انشاء حساب جديد */
+
+
+/* نهاية كود اسماعيل  */

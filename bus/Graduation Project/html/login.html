@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imgs/train.png">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+</head>
+<body>    
+
+
+
+        <!-- بداية كوداسماعيل  -->
+
+        <div class="form" id="Sign-in">
+            <form action="./card.html">
+                <h2>login</h2>
+                <input type="email" required placeholder="Enter Email Address "><br>
+                <input type="password" placeholder="Enter Password">
+                <br>
+                <li><a onclick="gitCreate()" href="#">إنشاء حساب جديد</a></li>
+                <input id="inpSginIn" type="Submit" value="تسجيل الدخول">
+            </form>
+        </div>
+
+
+
+        <div class="createAccount" id="createAccount">
+            
+            <form action="#Sign-in" >
+                <h1>.................. Register with your email ..................</h1>
+                <h3>Name</h3>
+                <input id="name" type="text" placeholder="First Name">
+                <h3>Email</h3>
+                <input type="email" required placeholder="you@example.com">
+                <h3>Password</h3>
+                <input type="password" placeholder="Password">
+                <h3>Number</h3>
+                <input type="number" placeholder="Number"><br>
+                <h3>الحالة الاجتماعية</h3>
+                <select id="sss" name="" id="">
+                    <option value="">ذكر</option>
+                    <option value="">انثى</option>
+                </select>
+                <br>
+                <input id="submit" type="submit" value="Submit">
+                <li><a onclick="gitSignIn()" href="#">لتسجيل دخول بحسابك الحالى</a></li>
+            </form>
+        </div>
+
+        <!-- نهاية كوداسماعيل  -->
+
+        <script src="../js/main.js"></script>
+</body>
+</html>

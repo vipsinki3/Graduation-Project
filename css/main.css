@@ -1,0 +1,625 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {    
+    font-family: system-ui;
+}
+
+::selection {
+    color: white;
+    background-color: black;
+}
+
+@font-face {
+    font-family: "Droid-Arabic-Kufi";
+    src: url(/fonts/Droid-Arabic-Kufi.ttf);
+}
+
+/* بداية كود الهيدر */
+
+.header {
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 2px solid #f6f6f6;
+    display: flex;
+    align-items: center;
+}
+
+.header .container {
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.header .container .name-header {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: system-ui;
+    color: #0075FF;
+}
+
+.header .container .link-header {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.header .container .link-header a {
+    min-width: 100px;
+    padding: 6px 10px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: system-ui;
+    transition: 0.3s;
+
+
+    background: linear-gradient(to right , #0075ff 50% , #fff 50%);
+    background-size: 200% 100%;
+    background-position: right bottom ;
+}
+
+.header .container .link-header a:hover {
+    background-position: left bottom ;
+    color: #fff;
+    box-shadow: #0075FF 0px 1px 0px 0px, #0075FF 0px 0px 5px 0px;
+}
+
+.header .right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header .burger-icon img {
+    cursor: pointer;
+    display: none;
+}
+
+.header .burger-icon img:hover .manu {
+    background-color: white;
+}
+
+@media (max-width:767px) {
+    .header .container{
+        justify-content: center;
+    }
+    .header .right-nav {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header .right-nav .link-header {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header .container .link-header a {
+        width: 100%;
+    }
+
+    .header .container .link-header a:hover {
+        background-color: #ddd;
+        box-shadow: none;
+        color: #fff;
+        background-position: left bottom;        
+    }
+}
+
+/* نهاية كود الهيدر */
+
+
+/* بداية كود الكونتينر بيدج */
+
+.container-page {
+    height: auto;
+    width: 1399px;
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-page .imgs {
+
+}
+.container-page .imgs img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    animation: up-and-down 3s linear infinite;
+}
+
+    /* Start Animation */
+@keyframes up-and-down {
+    0%, 100% {
+        top: 0;
+    }
+    50% {
+        top: 50px;
+    }
+}
+    /* End Animation */
+.container-page .text {
+
+}
+.container-page .text p{
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: bold;
+    text-align: center;
+}
+.container-page .text p span {
+    color: #FFCF2D;
+}
+
+/* بداية كود الترحيب بالموقع */
+
+.Welcome-site {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 160px;
+    margin-bottom: 51px;
+    margin-top: 80px;
+}
+
+/* نهاية كود الترحيب بالموقع */
+
+/* Mobile  */
+@media (max-width: 399px) {
+    .container-page {
+        height: 800px;
+        gap: 0px;
+    }
+    .container-page {
+        width: 330px;
+    }
+    .container-page .imgs img {
+        width: 325px;
+        height: 325px;
+    }
+    .Welcome-site {
+        margin-top: 180px;
+    }
+    .contactUs form {
+        margin-top: 1500px;
+    }
+}
+/* md */
+@media  (min-width: 400px) and (max-width: 767px) {
+    .container-page {
+        height: 800px;
+        gap: 0px;
+        width: 400px;
+        margin-bottom: 600px;
+    }
+    .container-page .imgs img {
+        width: 400px;
+        height: 400px;
+    }
+    .Welcome-site{
+        margin-top: 180px;
+    }
+    .contactUs form {
+        margin-top: 1000px;
+    }
+}
+/* lg */
+@media  (min-width: 768px) and (max-width: 992px) {
+    .container-page {
+        gap: 0px;
+        width: 700px;
+        margin-bottom: 100px;
+    }
+    .container-page .imgs img {
+        width: 430px;
+        height: 430px;
+    }
+}
+/* Xlg */
+@media  (min-width: 993px) and (max-width: 1199px) {
+    .container-page {
+        width: 950px;
+        margin-bottom: 200px;
+    }
+    .container-page .imgs img {
+        width: 500px;
+        height: 500px;
+    }
+}
+/* Xlg */
+@media  (min-width: 1200px) and (max-width: 1399px) {
+    .container-page {
+        width: 1100px;
+        margin-bottom: 200px;
+    }
+}
+
+
+/* نهاية كود الكونتينر بيدج */
+
+
+/* بداية كود المنتجات */
+
+.products {
+    height: 1000px;
+    width: 1399px;
+    /* border: solid 1px red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.products .box {
+    text-align: center;
+    padding: 15px;
+    width: 400px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 400px;
+    border-radius: 5px;
+    animation: scaledown 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+.products .box:hover{
+    background-color: rgba(0, 0, 0, 0.02);
+    transition: 0.5s;
+    box-shadow: 0px 1px 20px 2px rgb(0 0 0 / 40%);
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaledown{
+    0% {
+        -webkit-transform:scale(1.08) ;
+        transform: scale(1.08);
+    }
+    100% {
+        -webkit-transform:scale(1.0) ;
+        transform: scale(1.0);
+    }
+}
+@keyframes scale{
+    0% {
+        -webkit-transform:scale(1) ;
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform:scale(1.08) ;
+        transform: scale(1.08);
+    }
+}
+
+.products .box h1 {
+
+}
+.products .box img {
+    width: 100%;
+    height: 200px;
+}
+
+.products .box p {
+    margin-bottom: 20px;
+}
+.products .box a {
+    padding: 10px 25px;
+    background-color: #0075FF;
+    color: #000;
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.products .box #a0 {
+    background: linear-gradient(to right , #F4B12C 50% , #0075FF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.products .box #a1 {
+    background: linear-gradient(to right , #28D2C9 50% ,#0075FF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.products .box #a2 {
+    background: linear-gradient(to right , #5A0737 50% , #0075FF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.products .box #a0:hover {
+    background-position: left bottom;
+    color: #fff;
+}
+.products .box #a1:hover {
+    background-position: left bottom;
+    color: #fff;
+}
+.products .box #a2:hover {
+    background-position: left bottom;
+    color: #fff;
+}
+
+
+/* بداية اكود الميديا */
+
+
+@media (max-width: 399px){
+    .products {
+        width: 300px;
+    }
+    .title-about{
+        display: none;
+    }
+}
+
+@media  (min-width: 400px) and (max-width: 767px){
+    .products {
+        width: 400px;
+    }
+    .title-about{
+        display: none;
+    }
+}
+
+@media  (min-width: 768px) and (max-width: 992px){
+    .products {
+        margin-bottom: 200px;
+    }
+    .title-about{
+        margin-top: 300px;
+    }
+}
+
+@media  (min-width: 993px) and (max-width: 1199px){
+    .products {
+        height: 1000px;
+    }
+}
+
+@media  (min-width: 1200px) and (max-width: 1399px){
+    .products {
+        height: 1000px;
+    }
+}
+@media   (min-width: 1400px){
+    .products {
+        height: 600px;
+    }
+}
+
+
+/* نهاية اكود الميديا */
+
+
+/* نهاية كود المنتجات */
+
+
+/* بداية كود العنوان */
+
+.title-about {
+    margin-bottom: 50px;
+}
+.title-about h1 {
+    padding: 15px 15px;
+    background-color: #0075FF;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+/* نهاية كود العنوان */
+
+/* بداية كود من نحن */
+
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    height: 300px;
+}
+
+.about .about-imga{
+    
+}
+.about .about-imga img{
+    position: relative;    
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.about .about-text {
+    width: 600px;
+}
+.about .about-text p {
+    line-height: 2;
+}
+
+.about .about-text p span {
+    font-size: 20px;
+    font-weight: bold;
+    color: #F4B12C;
+}
+.about .about-text a {
+    background-color: #0075FF;
+    color: white;
+    font-weight: 500;
+}
+
+/* بداية الميديا كويري  */
+
+/* Mobile  */
+@media (max-width: 399px) {
+    .about {
+        display: none;
+    }
+    .about .about-imga img{
+        display: none;
+    }
+}
+/* md */
+@media  (min-width: 400px) and (max-width: 767px) {
+    .about {
+        display: none;
+    }
+    .about .about-imga img{
+        display: none;
+    }
+}
+/* lg */
+@media  (min-width: 768px) and (max-width: 992px) {
+    .about{
+        margin-top: 200px;
+    }
+    .about .about-imga img{
+        display: none;
+    }
+}
+/* Xlg */
+@media  (min-width: 993px) and (max-width: 1199px) {
+    .about .about-imga img{
+        display: none;
+    }
+}
+/* Xlg */
+@media  (min-width: 1199px) and (max-width: 1399px) {
+    .about .about-imga img{
+        display: none;
+    }
+}
+@media  (min-width: 1400px){
+    .about {
+        margin-bottom: 30px;
+    }
+}
+/* نهاية الميديا كويري  */
+
+/* نهاية كود من نحن */
+
+
+/* بداية كود اتصل بنا */
+
+.contactUs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactUs form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;  
+    width: 600px;
+    background-color: #ddd;
+}
+.contactUs form input {
+    margin: 10px 0px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 100;
+    border: 1px solid #F4B12C;
+}
+.contactUs form textarea {
+    height: 100px;
+    border: 1px solid #F4B12C;
+    resize: none;
+}
+
+/* نهاية كود اتصل بنا */
+
+
+/* بداية كودالفوتر */
+
+.footer {
+    position: relative;
+    margin-top: 50px;
+    height: 400px;
+    background-color: #202020;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .containerFooter {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.footer .containerFooter .fcontactUs {
+    
+}
+.footer .containerFooter .fcontactUs h1 {
+    color: #3C3C3C;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.footer .containerFooter .fcontactUs a {
+    color: #D1D1D1;
+    display: block;
+    padding: 5px 0;
+}
+.footer .containerFooter .fcontactUs h2 {
+    color: #D1D1D1;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+.footer .copyright {
+    position: absolute;
+    bottom: 20px;
+}
+.footer .copyright h1 {
+    font-size: 20px;
+    color: #D1D1D1;
+    font-weight: 100;
+}
+/* بداية الميديا كويري */
+
+@media (max-width:515px){
+    .footer {
+        /* display: none; */        
+    }
+    .footer .containerFooter .fcontactUs:nth-child(1) {
+        display: none;
+    }
+    .footer .containerFooter .fcontactUs:nth-child(4) {
+        display: none;
+    }
+}
+@media (max-width:992px){
+    .footer {
+        height: 500px;
+    }
+}
+
+/* نهاية الميديا كويري */
+
+/* نهاية كودالفوتر */

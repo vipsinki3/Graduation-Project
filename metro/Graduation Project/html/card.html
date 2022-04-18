@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../imgs/train.png">
+    <link rel="stylesheet" href="../css/card.css">
+    <title>Card</title>
+</head>
+
+<body>
+
+    <!--بداية كود الهيدر-->
+    <div class="header">
+        <div class="container">
+            <div class="name-header">My matro</div>
+
+            <div class="right-nav">
+                <div class="link-header">
+                    <a href="../index.html" target="blank">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--نهاية كود الهيدر-->
+
+
+
+
+
+    <div class="containerPage">
+
+        <div class="content">
+
+            <!-- بداية كود اسماعيل  -->
+
+
+            <div class="boxDataDate">
+                <form>
+
+
+                    <select id="fromTheStation" name="lang" required>
+                        <option value="">محطة القيام</option>
+                        <option value="">محطة الوصول</option>
+                        <option value="المنيب">المنيب</option>
+                        <option value="ساقية مكي">ساقية مكي</option>
+                        <option value="ام المصرين">>المصرين ام</option>
+                        <option value="الجيزة">الجيزة</option>
+                        <option value="فيصل">فيصل</option>
+                        <option value="جامعة القاهرة">جامعة القاهرة</option>
+                        <option value="البحوث">>البحوث</option>
+                        <option value="الدقي">الدقي</option>
+
+                    </select>
+
+
+                    <select id="toStation" name="lang" required>
+                        <option value="">محطة الوصول</option>
+                        <option value="">محطة القيام</option>
+                        <option value="المرج الجديدة">المجرج الجديدة </option>
+                        <option value="المرج">المرج</option>
+                        <option value="عزبة النخل">عزبة النخل</option>
+                        <option value="عين شمس">عين شمس</option>
+                        <option value="المطرية">المطرية </option>
+                        <option value="حلمية الزيتون">حلمية الزيتون</option>
+                        <option value=" حدائق الزيتون"> حدائق الزيتون </option>
+                        <option value=" سراية القوبة">المحطة سراية القوبة</option>
+                        <option value=" حمامات القوبة"> حمامات القوبة</option>
+                    </select>
+
+
+
+                </form>
+                <br>
+                <form>
+                    <h3>تاريخ القيام</h3>
+                    <input id="date" type="date" value="2022-04-10">
+
+                    <br>
+                    <input id="timeIn" type="datetime" value="9:30م"><label for="">من وقت</label>
+                    <input id="timeOut" type="datetime" value="9:45م"><label for="">إلى وقت</label>
+
+
+                </form>
+                <form action="../html/login.html">
+                    <br>
+                    <select name="lang" required>
+                        <option value="">الدرجة </option>
+                        <option value="أولى مكيفة">أولى مكيفة</option>
+                        <option value="درجة ثانية تهوية"> درجة ثانية تهوية</option>
+                        <option value="ثانية مكيفة">ثانية مكيفة</option>
+                        <option value="ثالثة مكيفة">ثالثة مكيفة</option>
+
+
+                    </select>
+                    <select name="lang" required>
+                        <option value="">فئة الركب</option>
+                        <option value="تذكرة كامله">تذكرةكاملة </option>
+                        <option value="نصف تذكرة">نصف تذكرة</option>
+                        <option value="تذكره مجانا لذوى الاحتياجات ">تذكرة مجانا لذوى الاحتياجات</option>
+                    </select>
+                    <br>
+
+                    <select name="lang" required>
+                        <option value="">نوع المترو </option>
+                        <option value="اكسبريس درجة أولى مكيفة">اكسبريس درجة أولى مكيفة</option>
+                        <option value="اكسبريس درجة ثانية مكيفة">اكسبريس درجة ثانية مكيفه</option>
+                        <option value="اكسبريس  مكيف +مميزة">اكبريس مكيف +مميزة</option>
+                        <option value="اكسبريس مكيف">اكسبريس مكيف</option>
+
+
+
+                    </select>
+                </form>
+
+
+                </form>
+            </div>
+
+
+            <!-- نهاية كود اسماعيل  -->
+
+
+            <div class="boxData">
+                <form action="#">
+                    <input type="text" placeholder="أكتب اسمك" name="" id="inpName">
+
+                    <input type="number" placeholder="رقم الهاتف" required name="" id="inpNumber">
+                    <input type="submit" name="" id="btnsubmit">
+                </form>
+                <h1 id="errorData"></h1>
+            </div>
+
+            <div class="boxCard">
+                <div class="nameCard">
+                    <h1 id="nameValue"></h1>
+                    <h1>الاسم /</h1>
+                </div>
+
+
+                <div class="numberPhone">
+                    <h1 id="numberValue"></h1>
+                    <h1>الموبايل :</h1>
+                </div>
+
+
+                <div class="nubmerCode">
+                    <h1 class="codeValue" id="codeColor"></h1>
+                    <h1>كود التذكرة : </h1>
+                </div>
+
+
+                <div class="station">
+                    <div class="fromStation">
+                        <h1>من محطة : </h1>
+                        <h1 class="fromTheStationValue"></h1>
+                    </div>
+
+                    <div class="toStation">
+                        <h1>إلى محطة : </h1>
+                        <h1 class="toStationValue"></h1>
+                    </div>
+
+                </div>
+
+
+
+                <div class="dateAndTime">
+                    <div class="divTimeIn">
+                        <h1>من :</h1>
+                        <h1 id="timeInValue"></h1>
+                    </div>
+
+                    <div class="divtimeOut">
+                        <h1>إلى :</h1>
+                        <h1 id="timeOutValue"></h1>
+                    </div>
+
+                    <div class="divdate">
+                        <h1>تاريخ :</h1>
+                        <h1 id="dateValue"></h1>
+                    </div>
+
+
+                </div>
+
+
+
+                <div class="footerCard">
+                    <h1>موقع المترو</h1>
+                    <h1> التذكرة صالحة لمدة يوم من تاريخ حجزها</h1>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/2f966bbe28.js" crossorigin="anonymous"></script>
+
+    <script src="../js/card.js"></script>
+
+
+
+</body>
+
+</html>
